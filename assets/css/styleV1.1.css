@@ -1,0 +1,406 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    position: fixed;
+    text-align: center;
+    background: url(../images/background.jpg);
+    background-position: center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    /* No highlight on text */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+  }
+  
+  header {
+    position: relative;
+    max-width: 50%;
+    margin: 1vh auto;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  h1, h2, h3, h6 {
+    color: white;
+  }
+  
+  h1 {
+    clear: both;
+    font-size: 3.5vw;
+  }
+  
+  h2{
+    clear: both;
+    font-size: 2vw;
+  }
+  
+  h3{
+    clear: both;
+    font-size: 1.5vw;
+  }
+  
+  h6 {
+    font-size: 1vw;
+    padding-left: 2%;
+    clear: both;
+  }
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Choose your character */
+  
+  .position-characters {
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    bottom: 25%;
+    left: 0;
+  }
+  
+  .characters {
+    position: relative;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .characters-fighters {
+    position: relative;
+    width: 25%;
+    float: left;
+  }
+  
+  .hp-bar {
+    position: relative;
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    text-align: left;
+    
+  }
+  
+  .hp-bar h6 {
+    position: relative;
+    color: orange;
+    height: 1.2vw;
+    width: 14%;
+    float: left;
+    border: 0.1vw solid black;
+    border-top-left-radius: 0.5vw;
+    border-bottom-left-radius: 0.5vw;
+    background: black;
+  }
+  
+  .hp-bar-color {
+    position: relative;
+    background: green;
+    height: 1.2vw;
+    width: 86%;
+    border: 0.3vw solid black;
+    border-radius: 0.6vw;
+    float: left;
+  }
+  
+  .hp-bar-color-helper {
+    position: absolute;
+    background: black;
+    height: 1.2vw;
+    width: 90%;
+    top: 0;
+    left: 10%;
+    border: 0.3vw solid black;
+    border-radius: 0.5vw;
+  }
+  
+  /* Character selected */
+  
+  .selected-character {
+    position: relative;
+    height: 100%;
+    width: 40%;
+    margin: 0 auto;
+    float: left;
+  }
+  
+  .unselected-characters {
+    position: relative;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    float: left;
+  }
+  
+  .selected-character-fighters {
+    position: relative;
+    width: 37.5%;
+    float: left;
+    margin-left: 31.25%;
+  }
+  
+  .unselected-character-fighters {
+    position: relative;
+    width: 25%;
+    float: left;
+  }
+  
+  .unselected-character-fighters:first-child {
+    margin-left: 12.5%;
+  }
+  
+  .flipped {
+      transform: scale(-1, 1);
+      -moz-transform: scale(-1, 1);
+      -webkit-transform: scale(-1, 1);
+      -o-transform: scale(-1, 1);
+      -khtml-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+  }
+  
+  /* Sidelines / Battle ground */
+  
+  .sidelines {
+    position: absolute;
+    height: 50%;
+    width: 12.5%;
+    top: 15%;
+    right: 0;
+  }
+  
+  .battlefield {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    margin: 0 auto;
+  }
+  
+  .battle-fighters {
+    position: relative;
+    width: 50%;
+    float: left;
+  }
+  
+  .sideline-fighters {
+    position: relative;
+    width: 50%;
+    float: left;
+  }
+  
+  .sideline-fighters h6 {
+    font-size: 0.5vw;
+    height: 0.6vw;
+  }
+  
+  .sideline-fighters .hp-bar-color {
+    height: 0.6vw;
+    width: 84%;
+    border: 0.2vw solid black;
+  }
+  
+  .sideline-fighters .hp-bar-color-helper {
+    height: 0.6vw;
+  }
+  
+  .rotated-character {
+      transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -khtml-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+  }
+  
+  .rotated-opponent {
+      transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -khtml-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+  }
+  
+  .rotated-flipped-character {
+      transform: scale(-1, 1) rotate(90deg);
+      -moz-transform: scale(-1, 1) rotate(90deg);
+      -webkit-transform: scale(-1, 1) rotate(90deg);
+      -o-transform: scale(-1, 1) rotate(90deg);
+      -khtml-transform: scale(-1, 1) rotate(90deg);
+      -ms-transform: scale(-1, 1) rotate(90deg);
+  }
+  
+  .rotated-flipped-opponent {
+      transform: scale(-1, 1) rotate(-90deg);
+      -moz-transform: scale(-1, 1) rotate(-90deg);
+      -webkit-transform: scale(-1, 1) rotate(-90deg);
+      -o-transform: scale(-1, 1) rotate(-90deg);
+      -khtml-transform: scale(-1, 1) rotate(-90deg);
+      -ms-transform: scale(-1, 1) rotate(-90deg);
+  }
+  
+  /* Character animation */
+  
+  @keyframes attackRight {
+    0%   {left: 0px}
+    25%  {left: 8vw}
+    75%  {left: 2vw}
+    100% {left: 4vw}
+  }
+  
+  .animation-character {
+    animation-name: attackRight;
+    animation-duration: 0.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s;
+    animation-direction: normal; 
+  }
+  
+  /* opponent animation */
+  
+  @keyframes attackLeft {
+    0%   {right: 0px}
+    25%  {right: 8vw}
+    75%  {right: 2vw}
+    100% {right: 4vw}
+  }
+  
+  .animation-opponent {
+    animation-name: attackLeft;
+    animation-duration: 0.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s;
+    animation-direction: normal; 
+  }
+  
+  /* Winner */
+  .winner {
+    font-size: 5vw;
+    color: yellow;
+    text-shadow: 2px 2px blue;
+    z-index: 1;
+  }
+  
+  /* Restart */
+  .restart {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    font-size: 2vw;
+    color: black;
+    background: white;
+    border: 0.2vw solid red;
+    border-top-left-radius: 1.5vw;
+    border-bottom-left-radius: 1.5vw;
+    border-top-right-radius: 1.5vw;
+    border-bottom-right-radius: 1.5vw;
+    z-index: 1;
+  }
+  
+  button:hover, button:active, button:focus {
+    box-shadow: inset 0 0 0.3vw red, 0 0 0.3vw red;
+    outline: none;
+  }
+  
+  /* Media queries for mobile and tablet*/
+  @media screen and (max-width: 780px) and (orientation: portrait) {
+      header {
+        position: relative;
+        max-width: 98vw;
+      }
+      /* Choose your character */
+      .characters {
+        width: 100%;
+      }
+      /* Character selected */
+      .selected-character {
+        width: 25%;
+      }
+      .unselected-characters {
+        width: 75%;
+      }
+      .selected-character-fighters {
+        width: 100%;
+        margin-left: 0%;
+      }
+      .unselected-character-fighters {
+        width: 33.3%;
+      }
+      .unselected-character-fighters:first-child {
+        margin-left: 0%;
+      }
+      /* Sidelines / Battle ground */
+      .sidelines {
+        height: 50%;
+        width: 25%;
+        top: 25%;
+      }
+      .battlefield {
+        width: 80%;
+      }
+      /* HP Bar */
+      .hp-bar h6 {
+        height: 2.2vw; 
+        width: 14%;
+      }
+      h6 {
+        font-size: 2vw;
+        padding-left: 1%;
+      }
+      .hp-bar-color {
+        height: 2.2vw;
+        width: 86%;
+      }
+      .hp-bar-color-helper {
+        height: 2.2vw;
+      }
+      .sideline-fighters h6 {
+        font-size: 1vw;
+        height: 1.1vw;
+      }
+      .sideline-fighters .hp-bar-color {
+        height: 1.1vw;
+      }
+      .sideline-fighters .hp-bar-color-helper {
+        height: 1.1vw;
+      }
+      /* Font */
+      h1 {
+        font-size: 8vw;
+      }
+      .winner {
+        font-size: 10vw;
+      }
+      h2 {
+        font-size: 4.5vw;
+      }
+      h3{
+        font-size: 4vw;
+      }
+      /* Restart */
+      .restart {
+        font-size: 10vw;
+        border: 1vw solid red;
+        border-top-left-radius: 5vw;
+        border-bottom-left-radius: 5vw;
+        border-top-right-radius: 5vw;
+        border-bottom-right-radius: 5vw;
+      }
+  }

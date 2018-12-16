@@ -1,0 +1,85 @@
+dump
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fighty McFight Face</title>
+<script src="assets/javascript.js"></script>
+<link rel="text/css" src="assets/style.css">
+</head>
+<body>
+<H1>Battle</H1>
+<h1>Your character</h1>
+<h1>Enemies to Attach</h1>
+<h1>Defender</h1>   
+
+<div class="hero1"></div>
+
+<div class="hero2"></div>
+
+<div class="hero3"></div>
+
+<div class="hero4"></div>
+
+<div class="btn">Attack</div>
+
+<div class="btn">Restart</div>
+
+
+<h3 id="#playerAttack"></h3>
+<h3 id="#defenderAttack"></h3>
+<h3 id="#battleResult"></h3>
+</body>
+</html> -->
+
+
+
+// hero1
+// "HP"
+// "AP"
+// "CounterAP"
+
+// hero2
+// "HP"
+// "AP"
+// "CounterAP"
+
+// hero3
+// "HP"
+// "AP"
+// "CounterAP"
+
+// hero4
+// "HP"
+// "AP"
+// "CounterAP"
+
+// //is defender dead && yes= choose new enemy, no= "press restart"
+// //is enemy list cleared? if so "YOU WIN"
+
+
+// * Each character in the game has 3 attributes: `Health Points`, 
+// `Attack Power` and `Counter Attack Power`.
+
+// * Each time the player attacks, their character's Attack Power increases by 
+// its base Attack Power. 
+//   * For example, if the base Attack Power is 6, each attack will increase 
+//   the Attack Power by 6 (12, 18, 24, 30 and so on).
+// * The enemy character only has `Counter Attack Power`. 
+
+//   * Unlike the player's `Attack Points`, `Counter Attack Power` never changes.
+
+// * The `Health Points`, `Attack Power` and `Counter Attack Power` of each
+//  character must differ.
+
+// * No characters in the game can heal or recover Health Points. 
+
+//   * A winning player must pick their characters wisely by first fighting 
+//   an enemy with low `Counter Attack Power`. This will allow them to grind
+//    `Attack Power` and to take on enemies before they lose all of their
+//     `Health Points`. Healing options would mess with this dynamic.
+
+// * Your players should be able to win and lose the game no matter what 
+// character they choose. The challenge should come from picking the right
+//  enemies, not choosing the strongest player.
