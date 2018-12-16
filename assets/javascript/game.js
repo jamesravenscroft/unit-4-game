@@ -59,7 +59,7 @@ $(document).ready(function () {
               fighterHolder.attr('type',objFighters.fighters[i]);
               fighterHolder.attr('hp',objFighters.hp[i]);
               fighterHolder.attr('attack',objFighters.attack[i]);
-              fighterHolder.append('<img src="assets/images/'+ objFighters.fighters[i] + '.png"/>');
+              fighterHolder.append('<img src="assets/images/'+ objFighters.fighters[i] + '.PNG"/>');
               //create level
               var level = $('<h6>');
               level.text('Lv30');
