@@ -14,9 +14,9 @@ I played around with the attack power to progress in the game. Still finding fol
 <div class="container">
   <div class="row">
     <div class="col-md-6">
-         <img src="RPGtest.png">
+         <img src="assets/images/RPGtest.png">
     <div class="col-md-6">
-      <img src="RPGtest2.png>"
+      <img src="assets/images/RPGtest2.png>"
            </div>
       </div></div>
   </div></body></html>
