@@ -405,7 +405,6 @@ $(document).ready(function () {
             start();
            });
        }
-<<<<<<< HEAD
 //sunday- fixed  initial RESTART PROBLEM 403
 //2nd restart problem- Character doesn't change.
 //fixing 343-346, choose next fighter
@@ -416,6 +415,4 @@ $(document).ready(function () {
 //commented out 276-290. Didn't fix error but didnt crash!
 
 });       
-=======
-   });         
->>>>>>> aa17e414b8b76b2ee9ec062acf4fdf4d92405856
+
