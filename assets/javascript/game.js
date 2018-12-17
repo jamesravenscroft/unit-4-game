@@ -413,6 +413,5 @@ $(document).ready(function () {
 //removed 243, this allows game to flow through, 
 //but text is doubled, no 2nd attack from Opponent
 //commented out 276-290. Didn't fix error but didnt crash!
-
 });       
 
