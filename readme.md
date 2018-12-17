@@ -1,6 +1,6 @@
 # unit-4-game
 //game initially would get through 2 attack cycles before pausing.
-//Test: 373 "Congratulations" works if BattleTimes is set to 1, although BG image disappears
+//Test: 373 "Congratulations" works if BattleTimes is set to 1. On defeat Red BG not working.
 I played around with the attack power to progress in the game. Still finding following errors:
 
 //sunday- fixed  initial RESTART PROBLEM 403
