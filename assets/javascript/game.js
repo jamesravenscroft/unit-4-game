@@ -414,3 +414,7 @@ $(document).ready(function () {
 //but text is doubled, no 2nd attack from Opponent
 //commented out 276-290. Didn't fix error but didnt crash!
 });       
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3effb80a21f5faf404300d1e71493616396b849b
