@@ -59,7 +59,7 @@ $(document).ready(function () {
               fighterHolder.attr('type',objFighters.fighters[i]);
               fighterHolder.attr('hp',objFighters.hp[i]);
               fighterHolder.attr('attack',objFighters.attack[i]);
-              fighterHolder.append('<img src="assets/images/'+ objFighters.fighters[i] + '.png"/>');
+              fighterHolder.append('<img src="assets/images/'+ objFighters.fighters[i] + '.PNG"/>');
               //create level
               var level = $('<h6>');
               level.text('Lv30');
@@ -405,6 +405,7 @@ $(document).ready(function () {
             start();
            });
        }
+<<<<<<< HEAD
 //sunday- fixed  initial RESTART PROBLEM 403
 //2nd restart problem- Character doesn't change.
 //fixing 343-346, choose next fighter
@@ -415,3 +416,6 @@ $(document).ready(function () {
 //commented out 276-290. Didn't fix error but didnt crash!
 
 });       
+=======
+   });         
+>>>>>>> aa17e414b8b76b2ee9ec062acf4fdf4d92405856
