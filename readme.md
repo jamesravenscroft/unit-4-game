@@ -19,10 +19,8 @@ I played around with the attack power to progress in the game. Still finding fol
 </thead>
 <tbody>
 <tr>
-<td><img src="
-        jamesravenscroft/unit-4-game/assets/images/RPGtest.PNG
-      " alt="Main Image" style="max-width:100%;"></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="/mattbajorek/week-4-game/blob/master/readme_images/selection.png?raw=true%22selection.png%22"><img src="/mattbajorek/week-4-game/raw/master/readme_images/selection.png?raw=true%22selection.png%22" alt="Selection Image" style="max-width:100%;"></a></td>
+<td><img src="jamesravenscroft/unit-4-game/assets/images/RPGtest.PNG" alt="Main Image" style="max-width:100%;"></a></td>
+<td><img src="jamesravenscroft/unit-4-game/assets/images/RPGtest2.PNG" alt="Selection Image" style="max-width:100%;"></a></td>
 </tr>
 </tbody>
 </table>
