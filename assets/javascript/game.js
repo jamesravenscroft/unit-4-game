@@ -273,21 +273,21 @@ $(document).ready(function () {
        //show css animation enemy not dead
        $('.battle-fighters:eq(1)').addClass('animation-opponent');
        $('.battle-fighters:eq(1)').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
-        //    $('.battle-fighters:eq(1)').removeClass('.animation-opponent');
-        //    //update hp bar
-        //    $('.battle-fighters:eq(0) .hp-bar-color').css('width', String(characterPercentage) + '%');
-        //    //change color to yellow if less than or equal to 50%
-        //    //and red if less than 20 percent
-        //    if (characterPercentage <= 20) {
-        //        $('.battle-fighters:eq(0) .hp-bar-color').css('background', 'red');
-        //        } else if (characterPercentage<= 50) {
-        //            $('.battle-fighters:eq(0) .hp-bar-color').css('background', 'yellow');
-        //        }
-        //        // Update text
-        //        characterHPText.text(characterHP + ' / ' + characterHPTotal);
-        //        // Show attack message
-        //        opponentAttackMessage.html(opponentName + ' attacked you for <span style="color:red">' + opponentAttack + '</span> damage.');
-        //        // Renew click if neither player is dead
+           $('.battle-fighters:eq(1)').removeClass('.animation-opponent');
+           //update hp bar
+           $('.battle-fighters:eq(0) .hp-bar-color').css('width', String(characterPercentage) + '%');
+           //change color to yellow if less than or equal to 50%
+           //and red if less than 20 percent
+           if (characterPercentage <= 20) {
+               $('.battle-fighters:eq(0) .hp-bar-color').css('background', 'red');
+               } else if (characterPercentage<= 50) {
+                   $('.battle-fighters:eq(0) .hp-bar-color').css('background', 'yellow');
+               }
+               // Update text
+               characterHPText.text(characterHP + ' / ' + characterHPTotal);
+               // Show attack message
+               opponentAttackMessage.html(opponentName + ' attacked you for <span style="color:red">' + opponentAttack + '</span> damage.');
+               // Renew click if neither player is dead
                   clickBattle()                        
                });
               }  
@@ -405,7 +405,6 @@ $(document).ready(function () {
             start();
            });
        }
-<<<<<<< HEAD
 //sunday- fixed  initial RESTART PROBLEM 403
 //2nd restart problem- Character doesn't change.
 //fixing 343-346, choose next fighter
@@ -414,8 +413,4 @@ $(document).ready(function () {
 //removed 243, this allows game to flow through, 
 //but text is doubled, no 2nd attack from Opponent
 //commented out 276-290. Didn't fix error but didnt crash!
-
 });       
-=======
-   });         
->>>>>>> aa17e414b8b76b2ee9ec062acf4fdf4d92405856
