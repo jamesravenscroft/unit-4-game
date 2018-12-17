@@ -7,7 +7,7 @@ $(document).ready(function () {
     var objFighters = {
         fighters: ['Paul', 'Gurney', 'Baron', 'Feyd'],
        hp: [120,100,150,180],
-       attack: [8,5,15,25]
+       attack: [8,15,25,35]
        };
    var fighters;
    var character;
@@ -136,7 +136,7 @@ $(document).ready(function () {
        selected.append('<h1>Your Fighter</h1>');
        selected.last
        //show your 'choose opponent
-       unselected.append('<h1>Choose your Opponent</h1>');
+       unselected.append('<h1>Fear is the Mind Killer. Choose your Opponent</h1>');
        });
    
            //when unselected character is clicked
@@ -195,12 +195,12 @@ $(document).ready(function () {
        //enter click battle
        clickBattle();
        battleTimes++;
-       }
+    }
    //function for clicking fighters to battle
    function clickBattle() {
        $('.position-characters').on('click', '.battle-fighters:eq(1)', function() {
            //stop click so animation can happen before player clicks again
-           $('.position-characters').off('click', '.battle-fighters:eq(1)');
+        //    $('.position-characters').off('click', '.battle-fighters:eq(1)');
            //remove 'click enemey to attack' or 'fighter defeated'
            $('.battlefield h2').remove();
            $('.battlefield h3').remove();
@@ -208,8 +208,8 @@ $(document).ready(function () {
                characterName = $('.battle-fighters:eq(0)').attr('type');
                opponentName = $('.battle-fighters:eq(1)').attr('type');
                opponentAttack = $('.battle-fighters:eq(1)').attr('attack');
-              opponentHPTotal = $('.battle-fighters:eq(1)').attr('hp');
-               opponentHP = opponentHPTotal;
+               opponentHPTotal = $('.battle-fighters:eq(1)').attr('hp');
+               opponentHP = opponentHPTotal; 
                characterHPText = $('.battle-fighters:eq(0)').children('h6:eq(1)');
                opponentHPText = $('.battle-fighters:eq(1)').children('h6:eq(1)');
            }
@@ -226,7 +226,7 @@ $(document).ready(function () {
             //calculate percentage
             opponentPercentage = 86 * opponentHP/opponentHPTotal; 
         //see if opponentHP reaches 0
-        if (opponentHP <=0) {
+        if (opponentHP <= 0) {
             $('.position-characters').off('click', '.battle-fighters:eq(1)');
             opponentHP = 0;
             opponentPercentage = 0;
@@ -247,7 +247,7 @@ $(document).ready(function () {
             //and red if less than or equal to 20 percent
             if(opponentPercentage <= 20) {
                 $('.battle-fighters:eq(1) .hp-bar-color').css('background', 'red');
-            } else if (opponentPercentage <= 50) {
+            } else if (opponentPercentage<= 50) {
                 $('.battle-fighters:eq(1) .hp-bar-color').css('background', 'yellow');
                  }
               //update text
@@ -273,31 +273,31 @@ $(document).ready(function () {
        //show css animation enemy not dead
        $('.battle-fighters:eq(1)').addClass('animation-opponent');
        $('.battle-fighters:eq(1)').one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e) {
-           $('.battle-fighters:eq(1)').removeClass('.animation-opponent');
-           //update hp bar
-           $('.battle-fighters:eq(0) .hp-bar-color').css('width', String(characterPercentage) + '%');
-           //change color to yellow if less than or equal to 50%
-           //and red if less than 20 percent
-           if (characterPercentage <= 20) {
-               $('.battle-fighters:eq(0) .hp-bar-color').css('background', 'red');
-               } else if (characterPercentage<= 50) {
-                   $('.battle-fighters:eq(0) .hp-bar-color').css('background', 'yellow');
-               }
-               // Update text
-               characterHPText.text(characterHP + ' / ' + characterHPTotal);
-               // Show attack message
-               opponentAttackMessage.html(opponentName + ' attacked you for <span style="color:red">' + opponentAttack + '</span> damage.');
-               // Renew click if neither player is dead
-                   clickBattle()
+        //    $('.battle-fighters:eq(1)').removeClass('.animation-opponent');
+        //    //update hp bar
+        //    $('.battle-fighters:eq(0) .hp-bar-color').css('width', String(characterPercentage) + '%');
+        //    //change color to yellow if less than or equal to 50%
+        //    //and red if less than 20 percent
+        //    if (characterPercentage <= 20) {
+        //        $('.battle-fighters:eq(0) .hp-bar-color').css('background', 'red');
+        //        } else if (characterPercentage<= 50) {
+        //            $('.battle-fighters:eq(0) .hp-bar-color').css('background', 'yellow');
+        //        }
+        //        // Update text
+        //        characterHPText.text(characterHP + ' / ' + characterHPTotal);
+        //        // Show attack message
+        //        opponentAttackMessage.html(opponentName + ' attacked you for <span style="color:red">' + opponentAttack + '</span> damage.');
+        //        // Renew click if neither player is dead
+                  clickBattle()                        
                });
               }  
             });
         }
-           //update character damage and count for next round
-           characterAttack += originalCharacterAttack;
-           count++;
+                //update character damage and count for next round
+                characterAttack += originalCharacterAttack;
+                count++;
             });
-       }
+        }
        //function for defeated after if statements
        function defeated(person,num,first,second) {
        var show;
@@ -307,11 +307,11 @@ $(document).ready(function () {
        $('.position-characters').off('click', '.battle-fighters:eq(' + num + ')');
        if (person == 'character') {
            //player is defeated
-           show =characterName;
+           show = characterName;
            rotater = 'character';
            //show defeated
            h2.css('color','yellow');
-           h2.text('you have been defeated!');
+           h2.text('you have failed!');
          //red battlefield
          $('body').css({
              '.background': 'linear-gradient(rgba(255, 0, 0, 0.45), rgba(255,0, 0, 0.45)),url(assets/images/background.png)',
@@ -325,7 +325,7 @@ $(document).ready(function () {
          //show 'you lose'
          var loser = $('<h1>');
          loser.addClass('winner');
-         loser.text('Sorry! You lost!');
+         loser.text('You are dead. 10,000 years of selective breeding down the tubes');
          $('header').append(loser);
          //restart
          restart();
@@ -365,7 +365,7 @@ $(document).ready(function () {
       $('.battle-fighters:eq(' + num + ')').children('img').attr('src','assets/images/fainted' + show + '.png');
       //rotate faitned fighter
       if (show == objFighters.fighters[first] || show == objFighters.fighters[second]) {
-          $('.battle-fighters:eq(' + num + ')').children("img").addClass('rotated-flipped-' + person);     
+        $('.battle-fighters:eq(' + num + ')').children("img").addClass('rotated-flipped-' + person);     
       } else {
         $('.battle-fighters:eq(' + num + ')').children("img").addClass('rotated-' + person);
       }
@@ -386,7 +386,7 @@ $(document).ready(function () {
          //show you win
          var winner = $('<h1>');
          winner.addClass('winner');
-         winner.text('Congratulations! You win!');
+         winner.text('Congratulations! You Are the Kwisatz Haderach!');
          $('header').append(winner);
          //restart
            restart();
@@ -400,9 +400,18 @@ $(document).ready(function () {
         $('header').append(restart);
         //when restart button is pressed
         $('header').on('click', '.restart', function() {
-            $('header').on('click', '.restart');
+            $('header').off('click', '.restart');
             $('.position-characters .sidelines').remove();
             start();
            });
        }
-   });         
+//sunday- fixed  initial RESTART PROBLEM 403
+//2nd restart problem- Character doesn't change.
+//fixing 343-346, choose next fighter
+//increased attack power
+//to show outcomes.
+//removed 243, this allows game to flow through, 
+//but text is doubled, no 2nd attack from Opponent
+//commented out 276-290. Didn't fix error but didnt crash!
+
+});       

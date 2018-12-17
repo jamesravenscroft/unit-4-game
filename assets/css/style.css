@@ -5,7 +5,7 @@
   html,
   body {
     width: 100%;
-    height: 100%;
+    height:100%;
   }
   
   body {
@@ -29,7 +29,7 @@
   header {
     position: relative;
     max-width: 50%;
-    margin: 1vh auto;
+    margin: -11vh auto;
   }
   
   img {
@@ -73,7 +73,7 @@
     position: absolute;
     height: 40%;
     width: 100%;
-    bottom: 25%;
+    bottom: 30%;
     left: 0;
   }
   
@@ -100,6 +100,7 @@
   }
   
   .hp-bar h6 {
+    margin-top: 0px;
     position: relative;
     color: orange;
     height: 1.2vw;
@@ -125,7 +126,7 @@
     position: absolute;
     background: black;
     height: 1.2vw;
-    width: 90%;
+    width: 20%;
     top: 0;
     left: 10%;
     border: 0.3vw solid black;
@@ -221,39 +222,39 @@
   }
   
   .rotated-character {
-      transform: rotate(-90deg);
-      -moz-transform: rotate(-90deg);
-      -webkit-transform: rotate(-90deg);
-      -o-transform: rotate(-90deg);
-      -khtml-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
+      transform: rotate(-20deg);
+      -moz-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+      -o-transform: rotate(-20deg);
+      -khtml-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
   }
   
   .rotated-opponent {
-      transform: rotate(90deg);
-      -moz-transform: rotate(90deg);
-      -webkit-transform: rotate(90deg);
-      -o-transform: rotate(90deg);
-      -khtml-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
+      transform: rotate(20deg);
+      -moz-transform: rotate(20deg);
+      -webkit-transform: rotate(20deg);
+      -o-transform: rotate(20deg);
+      -khtml-transform: rotate(20deg);
+      -ms-transform: rotate(20deg);
   }
   
   .rotated-flipped-character {
-      transform: scale(-1, 1) rotate(90deg);
-      -moz-transform: scale(-1, 1) rotate(90deg);
-      -webkit-transform: scale(-1, 1) rotate(90deg);
-      -o-transform: scale(-1, 1) rotate(90deg);
-      -khtml-transform: scale(-1, 1) rotate(90deg);
-      -ms-transform: scale(-1, 1) rotate(90deg);
+      transform: scale(-1, 1) rotate(20deg);
+      -moz-transform: scale(-1, 1) rotate(20deg);
+      -webkit-transform: scale(-1, 1) rotate(20deg);
+      -o-transform: scale(-1, 1) rotate(20deg);
+      -khtml-transform: scale(-1, 1) rotate(20deg);
+      -ms-transform: scale(-1, 1) rotate(20deg);
   }
   
   .rotated-flipped-opponent {
-      transform: scale(-1, 1) rotate(-90deg);
-      -moz-transform: scale(-1, 1) rotate(-90deg);
-      -webkit-transform: scale(-1, 1) rotate(-90deg);
-      -o-transform: scale(-1, 1) rotate(-90deg);
-      -khtml-transform: scale(-1, 1) rotate(-90deg);
-      -ms-transform: scale(-1, 1) rotate(-90deg);
+      transform: scale(-1, 1) rotate(-20deg);
+      -moz-transform: scale(-1, 1) rotate(-20deg);
+      -webkit-transform: scale(-1, 1) rotate(-20deg);
+      -o-transform: scale(-1, 1) rotate(-20deg);
+      -khtml-transform: scale(-1, 1) rotate(-20deg);
+      -ms-transform: scale(-1, 1) rotate(-20deg);
   }
   
   /* Character animation */
@@ -294,7 +295,7 @@
   .winner {
     font-size: 5vw;
     color: yellow;
-    text-shadow: 2px 2px blue;
+    text-shadow: 2px 2px rgb(182, 103, 0);
     z-index: 1;
   }
   
@@ -306,7 +307,7 @@
     font-size: 2vw;
     color: black;
     background: white;
-    border: 0.2vw solid red;
+    border: 0.2vw solid orange;
     border-top-left-radius: 1.5vw;
     border-bottom-left-radius: 1.5vw;
     border-top-right-radius: 1.5vw;
@@ -404,3 +405,26 @@
         border-bottom-right-radius: 5vw;
       }
   }
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+img.animated-gif{
+  width: 13%;
+  height: auto;
+}
+img.animated-gif2{
+  width: 18%;
+  height: auto;
+}
+
+img.animated-gif3{
+  width: 20%;
+  height: auto;
+}
