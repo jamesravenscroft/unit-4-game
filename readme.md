@@ -10,7 +10,6 @@ I played around with the attack power to progress in the game. Still finding fol
 //removed 243, this allows game to flow through, 
 //but text is doubled, no 2nd attack from Opponent
 //commented out 276-290. Didn't fix error but didnt crash!
-<html><body>
 <div class="container">
   <div class="row">
     <div class="col-md-6">
@@ -19,4 +18,4 @@ I played around with the attack power to progress in the game. Still finding fol
       <img src="assets/images/RPGtest2.png>"
            </div>
       </div></div>
-  </div></body></html>
+  </div>
