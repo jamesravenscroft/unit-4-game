@@ -1,5 +1,6 @@
 # unit-4-game
 //game initially would get through 2 attack cycles before pausing.
+//Test: "Congratulations" works if BattleTimes is set to 1, although BG image disappears
 I played around with the attack power to progress in the game. Still finding following errors:
 
 //sunday- fixed  initial RESTART PROBLEM 403
@@ -7,6 +8,7 @@ I played around with the attack power to progress in the game. Still finding fol
 //fixing 343-346, choose next fighter
 //increased attack power
 //to show outcomes.
+<br>
 //removed 243, this allows game to flow through, 
 //but text is doubled, no 2nd attack from Opponent
 //commented out 276-290. Didn't fix error but didnt crash!
