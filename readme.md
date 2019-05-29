@@ -1,8 +1,8 @@
 # unit-4-game
 
 
-![MainImage](https://jamesravenscroft/unit-4-game/assets/images/RPGtest.PNG)
-![SelectionImage](https://jamesravenscroft/unit-4-game/assets/images/RPGtest2.PNG)
+![MainImage](jamesravenscroft/unit-4-game/assets/images/RPGtest.PNG)
+![SelectionImage](jamesravenscroft/unit-4-game/assets/images/RPGtest2.PNG)
 
 
 //game initially would get through 2 attack cycles before pausing.
