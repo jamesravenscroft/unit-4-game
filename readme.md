@@ -1,4 +1,10 @@
 # unit-4-game
+
+
+![MainImage](https://jamesravenscroft/unit-4-game/assets/images/RPGtest.PNG)
+![SelectionImage](https://jamesravenscroft/unit-4-game/assets/images/RPGtest2.PNG)
+
+
 //game initially would get through 2 attack cycles before pausing.
 //Test: 373 "Congratulations" works if BattleTimes is set to 1. On defeat Red BG not working.
 I played around with the attack power to progress in the game. Still finding following errors:
@@ -12,17 +18,3 @@ I played around with the attack power to progress in the game. Still finding fol
 //removed 243, this allows game to flow through, 
 //but text is doubled, no 2nd attack from Opponent
 //commented out 276-290. Didn't fix error but didnt crash!
-<table>
-<thead>
-<tr>
-<th>Main</th>
-<th>Selection</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src="jamesravenscroft/unit-4-game/assets/images/RPGtest.PNG" alt="Main Image" style="max-width:100%;"></a></td>
-<td><img src="jamesravenscroft/unit-4-game/assets/images/RPGtest2.PNG" alt="Selection Image" style="max-width:100%;"></a></td>
-</tr>
-</tbody>
-</table>
